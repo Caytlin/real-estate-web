@@ -3,6 +3,6 @@ services:
   apache:
     image: caytlin/carweb-website:latest
     ports:
-    -'80:80'
+    - '80:80'
     volumes:
     - .:/usr/local/apache2/htdocs
