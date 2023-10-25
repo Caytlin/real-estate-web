@@ -1,7 +1,7 @@
 version: '2.4'
 services:
   apache:
-    image: caytlin/carweb-website:latest
+    image: Caytlin/carweb-website:latest
     ports:
     - '80:80'
     volumes:
