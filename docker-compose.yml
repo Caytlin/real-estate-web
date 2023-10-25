@@ -1,7 +1,7 @@
 version: '2.4'
 services:
   apache:
-    image: Caytlin/carweb-website:latest
+    image: caytlin/real-estate-web:latest
     ports:
     - '80:80'
     volumes:
