@@ -18,7 +18,7 @@ node('AppServer')
 			app.push("latest")
 		}
 	}
-	stage('Pull-Image-Server)
+	stage('Pull-Image-Server')
 	{
 		sh "docker-compose down"
 		sh "docker-compose up -d"
