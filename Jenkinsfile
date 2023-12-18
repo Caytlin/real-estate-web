@@ -1,4 +1,4 @@
-node('HW-AppServer')
+node('AppServer')
 {
 	def app
 	stage('Cloning Git')
@@ -9,7 +9,7 @@ node('HW-AppServer')
 	stage('Build-and-Tag')
 	{
 		/* This builds the actual image and is synonymous to docker build on the command line */
-		app = docker.build("caytlin/real-estate-web")
+		app = docker.build("caytlin/nodejschatapp:latest")
 	}
 	stage('Post-to-dockerhub')
 	{
